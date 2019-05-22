@@ -1,4 +1,4 @@
-package Books.utility;
+package Books.utils;
 
 import Books.Books;
 
