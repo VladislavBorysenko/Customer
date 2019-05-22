@@ -17,12 +17,12 @@ public class Application {
 
         Arrays.sort(abiturients, new ComparatorByRating());
 
-      //  listOfMinExelentStudents(abiturients, NOMBER_OF_STUENTS);
+        listOfMinExelentStudents(abiturients, NOMBER_OF_STUENTS);
 
-       // listOfExelentStudents(abiturients, ENTERING_SCORE);
+        listOfExelentStudents(abiturients, ENTERING_SCORE);
 
         listOfBadResoultAbiturients(abiturients, ENTERING_SCORE);
-        int enteringScore = ENTERING_SCORE;
+
     }
 
     private static Abiturient[] createArray() {
@@ -78,20 +78,6 @@ public class Application {
         System.out.println("____________________________________________");
     }
 
-    public static void method() {
-        /*
-        for (int i = 0; i < abiturients.length; i++) {
-            if (abiturients[i].getRating() > enteringScore) {
-                abiturients[i] = abiturients[i];
-                System.out.println(abiturients[i].getRating());
-                System.out.println("--------------------------------");
-                //System.out.println(abiturients[i].getRating());
-                for (int j = abiturients.length - numberofStuents; j < abiturients.length; j++) {
 
-                }
-            }
-        }
-        */
-    }
 }
 

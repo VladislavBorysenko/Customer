@@ -12,8 +12,8 @@ public class Application {
     public static void main(String[] args) {
         Books[] books = new Books[12];
         books = createArray();
-        //listOfAuthor(books, AUTHOR);
-        //listOfRedactor(books, REDACTOR);
+        listOfAuthor(books, AUTHOR);
+        listOfRedactor(books, REDACTOR);
         Arrays.sort(books, new ComparatorByYear());
         listOfLastYearBook(books,YEAR);
     }

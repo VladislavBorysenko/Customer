@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
+
         Customer[] customers = new Customer[6];
         customers[0] = new Customer(1, "Ivan", "Ivanov", "Ivanovich", "Chkalova str.", 12345, 54321);
         customers[1] = new Customer(2, "Petr", "Petrov", "Petrovich", "Bonanisheskaya str.", 22345, 54322);
@@ -13,13 +14,11 @@ public class App {
         customers[5] = new Customer(6, "Anatoliy", "Anatoliev", "Anatolievich", "Druzhbi str.", 62345, 54326);
 
 
-
-
         int minInterval = 12345;
         int maxInterval = 42345;
 
 
-        //printDiapazonCard(customers, minInterval, maxInterval);
+        printDiapazonCard(customers, minInterval, maxInterval);
         sortByAlphavit(customers);
 
     }
@@ -29,18 +28,15 @@ public class App {
             if (customers[i].getCreditCard() >= minInterval && customers[i].getCreditCard() <= maxInterval) {
                 System.out.println(customers[i].getSurname() + " " + customers[i].getCreditCard());
             }
-
         }
-
-
     }
-    public static void sortByAlphavit(Customer[] customers){
+
+    public static void sortByAlphavit(Customer[] customers) {
         Arrays.sort(customers, new ComparatorBySurname());
-        for (int i = 0; i <customers.length ; i++) {
+        for (int i = 0; i < customers.length; i++) {
             System.out.println(customers[i].getSurname());
         }
     }
-
 }
 
 
