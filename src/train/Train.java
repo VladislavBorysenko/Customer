@@ -11,6 +11,11 @@ public class Train {
     private int plackart;
 
 
+    public Train(String finishPoint, int numberOfTrain) {
+        this.finishPoint = finishPoint;
+        this.numberOfTrain = numberOfTrain;
+    }
+
     public Train(int id, String finishPoint, int numberOfTrain, double timeOfStart, int place, int kupe, int lux, int plackart) {
         this.id = id;
         this.finishPoint = finishPoint;

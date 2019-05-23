@@ -8,10 +8,10 @@ public class TrainApp {
     public static void main(String[] args) {
 
         Train[] trains = new Train[5];
-        trains=createTrainsArray();
+        trains = createTrainsArray();
 
-        listOfEndPointTrains(trains,FINISH_POINT );
-        listOfEndPointAndAfterTimeTrains(trains, FINISH_POINT,TIME);
-        listOfEndPointAndHasPlace(trains,FINISH_POINT);
+        listOfEndPointTrains(trains, FINISH_POINT);
+        listOfEndPointAndAfterTimeTrains(trains, FINISH_POINT, TIME);
+        listOfEndPointAndHasPlace(trains, FINISH_POINT);
     }
 }

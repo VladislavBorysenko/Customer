@@ -25,14 +25,19 @@ public class ProductManager {
         return products;
     }
 
+    //printProductsOfName
     public static Product[] listOfName(Product[] products, String name) {
+        boolean isFound = false;
         System.out.println("Method: listOfMark ");
 
         for (int i = 0; i < products.length; i++) {
             if (products[i].getName().equals(name)) {
                 System.out.println(products[i]);
+                isFound = true;
             }
-
+        }
+        if (isFound == false) {
+            System.out.println("Not found");
         }
         return products;
     }
