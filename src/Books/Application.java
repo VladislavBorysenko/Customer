@@ -15,7 +15,6 @@ public class Application {
         listOfAuthor(books, AUTHOR);
         listOfRedactor(books, REDACTOR);
         Arrays.sort(books, new ComparatorByYear());
-        listOfLastYearBook(books,YEAR);
     }
 
 
