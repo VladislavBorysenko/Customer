@@ -1,6 +1,5 @@
 package bus;
 
-import static bus.BusFinalNums.*;
 import static bus.BusManager.*;
 
 public class BusApp {

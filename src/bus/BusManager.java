@@ -1,7 +1,9 @@
 package bus;
 
 public class BusManager {
-
+    public static int ROUTE_OF_BUS = 262;
+    public static int YEAR_BUS = 2000;
+    public static int MILIEAGE = 5000;
 
 
     public static Bus[] createBusesArray() {
