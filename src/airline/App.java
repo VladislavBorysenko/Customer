@@ -8,9 +8,10 @@ public class App {
        Airline[] airlines= methodOfCreateAirlinesArr();
 
         methodOfPrintdestination(airlines,destination_final);
-        methodOfPrintLisForDay(airlines,day_of_week);
-        methodOfPrintLisForDayAndTime(airlines,day_of_week,departuretime);
 
+        methodOfPrintLisForDay(airlines,day_of_week);
+
+        methodOfPrintLisForDayAndTime(airlines,day_of_week,departuretimes);
 
     }
 }

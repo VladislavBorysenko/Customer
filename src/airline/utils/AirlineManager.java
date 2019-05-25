@@ -63,7 +63,7 @@ public class AirlineManager {
         System.out.println("Method: methodOfPrintLisForDayAndTime");
         boolean isFoundDayOfWeekAndTime = false;
         for (int i = 0; i < airlines.length; i++) {
-            if ((airlines[i].getDayOfWeek().equals(dayOfweek)) && (airlines[i].getDeparturetime() >= time)) {
+            if ((airlines[i].getDayOfWeek().equals(dayOfweek)) && (airlines[i].getDeparturetime() > time)) {
                 System.out.println(airlines[i]);
                 isFoundDayOfWeekAndTime = true;
             }
