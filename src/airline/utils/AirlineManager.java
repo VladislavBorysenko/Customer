@@ -16,8 +16,8 @@ public class AirlineManager {
 
             String typePlane = TYPE_PLANES[rnd(TYPE_PLANES.length - 1)];
             String destination = DESTINATIONS[rnd(TYPE_PLANES.length - 1)];
-            int flightnumber = FLIGHTNUMBERS[rnd(TYPE_PLANES.length - 1)];
-            double departuretime = DEPARTURETIMES[rnd(TYPE_PLANES.length - 1)];
+            int flightnumber = FLIGHT_NUMBERS[rnd(TYPE_PLANES.length - 1)];
+            double departuretime = DEPARTURE_TIMES[rnd(TYPE_PLANES.length - 1)];
             String dayOfWeek = DAY_OF_WEEKS[rnd(TYPE_PLANES.length - 1)];
 
             Airline newAirline = new Airline(destination, flightnumber, typePlane, departuretime, dayOfWeek);
